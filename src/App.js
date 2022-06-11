@@ -1,21 +1,27 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import Navbar from "./components/Navbar";
 import Home from "./components/Home"
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Work from "./components/Work";
+import CV from "./components/CV";
+import Code from "./components/Code";
+import Design from "./components/Design";
 import Contact from "./components/Contact";
 
 
 function App() {
   return (
-    <div>
+    <Router>
       <Navbar/>
-      <Home/>
-      <About/>
-      <Skills/>
-      <Work/>
-      <Contact />
-    </div>
+        <Routes>
+          <Route path="/"
+          element={<Home />}
+          />
+          {/* <About/>
+          <Skills/>
+          <Work/>
+          <Contact /> */}
+        </Routes>
+    </Router>
 
   );
 }
