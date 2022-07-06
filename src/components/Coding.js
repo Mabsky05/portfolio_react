@@ -1,7 +1,7 @@
 import React from 'react'
 // import image_name from '../assets/image_name.jpg'
 
-const Code = () => {
+const Coding = () => {
   return (
     <div name='skills' className='w-full h-screen bg-[#0a192f] text-gray-300'>
       {/* Container */}
@@ -43,4 +43,4 @@ const Code = () => {
   )
 }
 
-export default Code
+export default Coding

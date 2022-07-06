@@ -1,7 +1,8 @@
 import React from 'react'
 import {HiArrowNarrowRight} from 'react-icons/hi'
 
-const Home = () => {
+// const Home = () => 
+function Home() {
   return (
     <div name='home' className='w-full h-screen bg-[#0a192f]'>
 
@@ -25,4 +26,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Home;

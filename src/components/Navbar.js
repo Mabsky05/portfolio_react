@@ -6,6 +6,7 @@ import {HiOutlineMail} from 'react-icons/hi'
 import { Link } from 'react-router'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 import Logo from '../assets/logo.jpg'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 const Navbar = () => {
     const[nav, setNav] = useState(false)
@@ -13,14 +14,14 @@ const Navbar = () => {
 
   return (
     <div className='fixed w-full h-[80px] flex justify-center items-center px-4 bg-[#0a192f]
-    text-gray-300'>
+    text-gray-300 '>
         {/* menu */}
             <ul className='hidden md:flex'>
-                <li><button>Home</button></li>
-                <li>CV</li>
-                <li>Architectural</li>
-                <li>Programming</li>
-                <li>Contact</li>
+                <li><a href="/">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="arch">Architectural</a></li>
+                <li><a href="coding">Coding</a></li>
+                <li><a href="contact">Contact</a></li>
             </ul>
     
         {/*Hamburger*/}
@@ -67,8 +68,6 @@ const Navbar = () => {
             </li>
         </ul>
         </div>
-
-
     </div>
   )
 }

@@ -2,9 +2,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Navbar from "./components/Navbar";
 import Home from "./components/Home"
-import CV from "./components/CV";
-import Code from "./components/Code";
-import Design from "./components/Design";
+import About from "./components/About";
+import Coding from "./components/Coding";
+import Architectural from "./components/Architectural";
 import Contact from "./components/Contact";
 
 
@@ -13,13 +13,11 @@ function App() {
     <Router>
       <Navbar/>
         <Routes>
-          <Route path="/"
-          element={<Home />}
-          />
-          {/* <About/>
-          <Skills/>
-          <Work/>
-          <Contact /> */}
+          <Route path="/" element={<Home />}/>
+          <Route path="/about" element={<About />}/>
+          <Route path="/arch" element={<Architectural />}/>
+          <Route path="/coding" element={<Coding />}/>
+          <Route path="/contact" element={<Contact />}/>
         </Routes>
     </Router>
 
