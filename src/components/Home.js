@@ -1,10 +1,16 @@
 import React from 'react'
 import {HiArrowNarrowRight} from 'react-icons/hi'
+import {motion} from 'framer-motion'
 
 // const Home = () => 
 function Home() {
   return (
-    <div name='home' className='w-full h-screen bg-[#0a192f]'>
+    <motion.div name='home' className='w-full h-screen bg-[#0a192f]' 
+    initial={{opacity: 0}}
+    animate={{opacity:1}}
+    // animate={{opacity: 1}}
+    exit={{opacity:0}}
+    >
 
         {/* container */}
         <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'>
@@ -22,7 +28,7 @@ function Home() {
             </p>
 
         </div>
-    </div>
+    </motion.div>
   )
 }
 

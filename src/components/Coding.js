@@ -1,9 +1,14 @@
 import React from 'react'
+import {motion} from 'framer-motion'
 // import image_name from '../assets/image_name.jpg'
 
 const Coding = () => {
   return (
-    <div name='skills' className='w-full h-screen bg-[#0a192f] text-gray-300'>
+    <motion.div name='skills' className='w-full h-screen bg-[#0a192f] text-gray-300'
+    initial={{opacity: 0}}
+    animate={{opacity: 1}}
+    exit={{opacity:0}}
+    >
       {/* Container */}
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
         
@@ -39,7 +44,7 @@ const Coding = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

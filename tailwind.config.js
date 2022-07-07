@@ -4,6 +4,10 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      racing: ['Racing Sans One', 'cursive'],
+      expletus: ['Expletus Sans, cursive']
+    },
   },
   plugins: [],
 }

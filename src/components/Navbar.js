@@ -2,6 +2,8 @@ import React, {state, useState} from 'react'
 
 import {FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa'
 import {HiOutlineMail} from 'react-icons/hi'
+import {motion} from 'framer-motion'
+
 
 import { Link } from 'react-router'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
@@ -13,11 +15,17 @@ const Navbar = () => {
     const handleClick = () => setNav(!nav)
 
   return (
-    <div className='fixed w-full h-[80px] flex justify-center items-center px-4 bg-[#0a192f]
+    <div
+
+    className='fixed w-full h-[80px] flex justify-center items-center px-4 bg-[#0a192f]
     text-gray-300 '>
         {/* menu */}
-            <ul className='hidden md:flex'>
-                <li><a href="/">Home</a></li>
+            <ul className='hidden md:flex font-expletus text-4xl'>
+                <li><a href="/">
+                    <button className='hover:text-grey-600 hover:opacity-50'>
+                        Home
+                    </button></a>
+                </li>
                 <li><a href="about">About</a></li>
                 <li><a href="arch">Architectural</a></li>
                 <li><a href="coding">Coding</a></li>
@@ -31,11 +39,11 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
             <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'}>
-                <li classname='py-6 text-4xl'>Home</li>
-                <li classname='py-6 text-4xl'>CV</li>
-                <li classname='py-6 text-4xl'>Architectural</li>
-                <li classname='py-6 text-4xl'>Programming</li>
-                <li classname='py-6 text-4xl'>Contact</li>
+                <li className='py-6 text-4xl'>Home</li>
+                <li className='py-6 text-4xl'>CV</li>
+                <li className='py-6 text-4xl'>Architectural</li>
+                <li className='py-6 text-4xl'>Programming</li>
+                <li className='py-6 text-4xl'>Contact</li>
             </ul>
             
 

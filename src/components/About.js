@@ -1,8 +1,16 @@
 import React from 'react'
+import {motion} from "framer-motion"
 
 const About = () => {
   return (
-    <div name='about' className='w-full h-screen bg-[#0a192f] text-gray-300'>
+    <motion.div name='about' className='w-full h-screen bg-[#0a192f] text-gray-300'
+
+ 
+    initial={{x: 300, opacity: 0}}
+    animate={{x: 0, opacity: 1}}
+    transition={{duration: 1}}
+    exit={{x: -300, opacity:0}}
+    >
         <div className='flex flex-col justify-center items-center w-full h-full'>
             <div className='max-w-[1000px] w-full grid grid-cols-2 gap-8'>
                 <div className='sm:text-right pb-8 pl-4'>
@@ -28,7 +36,7 @@ const About = () => {
                 </div>
             </div>
         </div>
-    </div>
+    </motion.div>
   )
 }
 
