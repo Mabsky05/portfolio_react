@@ -26,7 +26,13 @@ const Navbar = () => {
                         Home
                     </button></a>
                 </li>
-                <li><a href="about">About</a></li>
+                <motion.li
+                whileHover={{
+                    opacity: 0.5,
+                    textShadow: "0px 0px 8px rgb(255, 255, 255)",
+                    // boxShadow: "0px 0px 8px rgb(255, 255, 255)",
+                }}
+                ><a href="about">About</a></motion.li>
                 <li><a href="arch">Architectural</a></li>
                 <li><a href="coding">Coding</a></li>
                 <li><a href="contact">Contact</a></li>

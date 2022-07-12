@@ -6,10 +6,10 @@ const About = () => {
     <motion.div name='about' className='w-full h-screen bg-[#0a192f] text-gray-300'
 
  
-    initial={{x: 300, opacity: 0}}
-    animate={{x: 0, opacity: 1}}
-    transition={{duration: 1}}
-    exit={{x: -300, opacity:0}}
+    initial={{y: -50, opacity: 0}}
+    animate={{y: 0, opacity: 1}}
+    transition={{duration: 1.5}}
+    exit={{y: 0, opacity:0}}
     >
         <div className='flex flex-col justify-center items-center w-full h-full'>
             <div className='max-w-[1000px] w-full grid grid-cols-2 gap-8'>
