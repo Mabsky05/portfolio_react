@@ -1,17 +1,20 @@
 import React from 'react'
 import {motion} from "framer-motion"
 
-const About = () => {
+function About() {
   return (
-    <motion.div name='about' className='w-full h-screen bg-[#0a192f] text-gray-300'
-
- 
-    initial={{y: -50, opacity: 0}}
-    animate={{y: 0, opacity: 1}}
-    transition={{duration: 1.5}}
+    <div name='about' className='w-full h-screen bg-[#0a192f] text-gray-300'
+    // initial={{y: -50, opacity: .5}}
+    // animate={{y: 0, opacity: 1}}
+    // transition={{duration: 1.1}}
+    // exit={{y: 0, opacity:0}}
+    >
+        <motion.div className='flex flex-col justify-center items-center w-full h-full'
+        initial={{y: -50, opacity: .5}}
+    animate={{rotate: 360, opacity: 1}}
+    transition={{duration: .5}}
     exit={{y: 0, opacity:0}}
     >
-        <div className='flex flex-col justify-center items-center w-full h-full'>
             <div className='max-w-[1000px] w-full grid grid-cols-2 gap-8'>
                 <div className='sm:text-right pb-8 pl-4'>
                     <p className='text-4xl font-bold inline border-b-4 border-pink-600'>About</p>
@@ -35,8 +38,8 @@ const About = () => {
                 </p>
                 </div>
             </div>
-        </div>
-    </motion.div>
+        </motion.div>
+    </div>
   )
 }
 

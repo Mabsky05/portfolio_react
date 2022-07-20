@@ -4,10 +4,10 @@ import {motion} from 'framer-motion'
 
 const Coding = () => {
   return (
-    <motion.div name='skills' className='w-full h-screen bg-[#0a192f] text-gray-300'
-    initial={{opacity: 0}}
-    animate={{opacity: 1}}
-    exit={{opacity:0}}
+    <motion.div name='skills' className='backface-hidden w-full h-screen bg-[#0a192f] text-gray-300'
+    // initial={{opacity: 0}}
+    // animate={{opacity: 1}}
+    // exit={{opacity:0}}
     >
       {/* Container */}
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>

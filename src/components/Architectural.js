@@ -4,10 +4,19 @@ import Logo from '../assets/logo.jpg'
 
 const Architectural = () => {
   return (
-    <motion.div name='work' className='w-full md:h-screen text-gray-300 bg-[#0a192f]'
-    initial={{opacity: 0}}
-    animate={{opacity: 1}}
-    exit={{opacity:0}}>
+
+
+    <motion.div name='work' 
+    className='bg-[#0a192f] backface-hidden w-full h-screen text-gray-300'
+    // initial={{opacity: 0}}
+    // animate={{opacity: 1}}
+    // exit={{opacity:0}}
+    >
+        <motion.img src={Logo} alt="Logo"
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            exit={{opacity:0}}
+        />
         <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
             <div className='pb-8'>
             <p className='text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600'>Work</p>
@@ -16,12 +25,12 @@ const Architectural = () => {
         </div>
 
 {/* Project Card */}
-        <div style={{backgroundImage: `url(${Logo})`}}
+        {/* <div style={{backgroundImage: `url(${Logo})`}}
         className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
             <div className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center
              mx-auto content-div'>
 
-                 {/* Hover Effects */}
+                 Hover Effects
                 <div className='opacity-0 group-hover:opacity-100'>
                     <span className='text-2xl font-bold text-white tracking-wider'>
                         ReactJS Application
@@ -41,14 +50,14 @@ const Architectural = () => {
 
                 </div>
             </div>
-        </div>
+        </div> */}
 
-        <div style={{backgroundImage: `url(${Logo})`}}
+        {/* <div style={{backgroundImage: `url(${Logo})`}}
         className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
             <div className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center
              mx-auto content-div'>
 
-                 {/* Hover Effects */}
+                 Hover Effects
                 <div className='opacity-0 group-hover:opacity-100'>
                     <span className='text-2xl font-bold text-white tracking-wider'>
                         ReactJS Application
@@ -66,7 +75,7 @@ const Architectural = () => {
                         </div>
                 </div>
             </div>
-        </div>
+        </div> */}
     </motion.div>
   )
 }
