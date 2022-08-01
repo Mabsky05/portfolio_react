@@ -4,25 +4,53 @@ import Logo from '../assets/logo.jpg'
 
 const Architectural = () => {
   return (
-
-
     <motion.div name='work' 
-    className='bg-[#0a192f] backface-hidden w-full h-screen text-gray-300'
+    className='bg-[#0a192f] w-full h-screen text-gray-300 flex justify-center align-center'
     // initial={{opacity: 0}}
     // animate={{opacity: 1}}
     // exit={{opacity:0}}
     >
-        <motion.img src={Logo} alt="Logo"
-            initial={{opacity: 0}}
-            animate={{opacity: 1}}
-            exit={{opacity:0}}
-        />
+        <div className='grid grid-cols-2 gap-4 place-content-center'>
+            
+            <motion.div
+                initial={{x: -50, y: -50, opacity: 0}}
+                animate={{x: 0, y: 0, opacity: 1}}
+                transition={{duration: 1}}
+                exit={{x: -50, y: -50, opacity: 0}}
+            ><img src={Logo} alt="Logo"/>
+            </motion.div>
+
+            <motion.div
+                initial={{x: 50, y: -50, opacity: 0}}
+                animate={{x: 0, y: 0, opacity: 1}}
+                transition={{duration: 1}}
+                exit={{x: 50, y: -50, opacity: 0}}
+            ><img src={Logo} alt="Logo"/>
+            </motion.div>
+
+            <motion.div
+                initial={{x: -50, y: 50, opacity: 0}}
+                animate={{x: 0, y: 0, opacity: 1}}
+                transition={{duration: 1}}
+                exit={{x: -50, y: 50, opacity: 0}}
+            ><img src={Logo} alt="Logo"/>
+            </motion.div>
+
+            <motion.div
+                initial={{x: 50, y: 50, opacity: 0}}
+                animate={{x: 0, y: 0, opacity: 1}}
+                transition={{duration: 1}}
+                exit={{x: 50, y: 50, opacity: 0}}
+            ><img src={Logo} alt="Logo"/>
+            </motion.div>
+        </div>
+{/* 
         <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
             <div className='pb-8'>
             <p className='text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600'>Work</p>
             <p className='py-6'>Check out my work</p>
             </div>
-        </div>
+        </div> */}
 
 {/* Project Card */}
         {/* <div style={{backgroundImage: `url(${Logo})`}}
