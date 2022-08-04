@@ -2,6 +2,7 @@ import React from 'react'
 import {motion} from 'framer-motion'
 import bootstrap from '../assets/bootstrap.png'
 import css from '../assets/css.png'
+import express from '../assets/express.png'
 import graphql from '../assets/graphql.png'
 import html5 from '../assets/html5.png'
 import jquery from '../assets/jquery.png'
@@ -18,24 +19,20 @@ const Coding = () => {
   };
 
   return (
-    <div name='skills' className='w-full h-screen bg-[#0a192f] text-gray-300'>
-      {/* Container */}
-      {/* <div>Format: Project Name / Desc / Techs</div>
-      <div>MARP / Desc / MERN stack, react-map-gl, Mapbox</div>
-      <div>WeatherDash / Desc / Bootstrap, CSS, HTML, Javascript, Jquery</div>
-      <div>Team gen / Desc / Node.js, html</div>
-      <div>Revamp / Express, MySQL, node.js </div> */}
+    <div name='skills' className='w-full my-auto h-screen bg-[#0a192f] text-gray-300'>
       <motion.div 
           initial={{x: -100, opacity: 0}}
           animate={{x: 0, opacity: 1}}
           transition={{duration:2}}
       
-      className='max-w-[1250px] mx-auto my-auto pt-20 grid grid-cols-1 gap-6 justify-center'>
-        <div className='flex flex-row'>
+      className='max-w-[1150px] mx-auto my-auto pt-20 grid grid-cols-1 gap-6 justify-center'>
+        <div className='pl-12 flex flex-row'>
           <div className='text-4xl font-spectral pr-24 flex items-center'>MARP</div>
           <div className='flex items-center font-spectral'>Mapping App with login/logout functionality</div>
             <div className='text-4xl font-spectral pl-24 flex flex-row'>
+              
               <img className='ring-green-200 hover:ring-2 duration-200' style={{maxWidth: "4rem"}} src={mongodb} alt='mongodb'></img>
+              <img className='ring-green-200 hover:ring-2 duration-200' style={{maxWidth: "4rem"}} src={express} alt='express'></img>
               <img className='ring-green-200 hover:ring-2 duration-200' style={{maxWidth: "4rem"}} src={react} alt='react' width={'128rem'}></img>
               <img style={{maxWidth: "4rem"}} src={node} alt='node' width={'128rem'}></img>
             </div>
@@ -45,9 +42,11 @@ const Coding = () => {
           <div className='text-4xl font-spectral pr-24 flex items-center'>WeatherDash</div>
           <div className='flex items-center font-spectral'>Mapping App with login/logout functionality</div>
             <div className='text-4xl font-spectral pl-24 flex flex-row'>
-              <img className='ring-green-200 hover:ring-2 duration-200' style={{maxWidth: "4rem"}} src={mongodb} alt='mongodb'></img>
-              <img className='ring-green-200 hover:ring-2 duration-200' style={{maxWidth: "4rem"}} src={react} alt='react' width={'128rem'}></img>
-              <img style={{maxWidth: "4rem"}} src={node} alt='node' width={'128rem'}></img>
+              <img className=' bg-cover bg-center z-0 ring-green-200 hover:ring-2 duration-200' style={{maxWidth: "4rem"}} src={bootstrap} alt='bootstrap'></img>
+              <img className='ring-green-200 hover:ring-2 duration-200' style={{maxWidth: "4rem"}} src={css} alt='css'></img>
+              <img className='ring-green-200 hover:ring-2 duration-200' style={{maxWidth: "4rem"}} src={html5} alt='html5' width={'128rem'}></img>
+              <img className='ring-green-200 hover:ring-2 duration-200' style={{maxWidth: "4rem"}} src={js} alt='js' width={'128rem'}></img>
+              <img className='ring-green-200 hover:ring-2 duration-200' style={{maxWidth: "4rem"}} src={jquery} alt='jquery' width={'128rem'}></img>
             </div>
           </div>
 
@@ -55,9 +54,8 @@ const Coding = () => {
           <div className='text-4xl font-spectral pr-24 flex items-center'>Team Gen</div>
           <div className='flex items-center font-spectral'>Mapping App with login/logout functionality</div>
             <div className='text-4xl font-spectral pl-24 flex flex-row'>
-              <img className='ring-green-200 hover:ring-2 duration-200' style={{maxWidth: "4rem"}} src={mongodb} alt='mongodb'></img>
-              <img className='ring-green-200 hover:ring-2 duration-200' style={{maxWidth: "4rem"}} src={react} alt='react' width={'128rem'}></img>
-              <img style={{maxWidth: "4rem"}} src={node} alt='node' width={'128rem'}></img>
+              <img className='ring-green-200 hover:ring-2 duration-200' style={{maxWidth: "4rem"}} src={node} alt='node'></img>
+              <img className='ring-green-200 hover:ring-2 duration-200' style={{maxWidth: "4rem"}} src={html5} alt='html5' width={'128rem'}></img>
             </div>
           </div>
           
@@ -65,8 +63,8 @@ const Coding = () => {
           <div className='text-4xl font-spectral pr-24 flex items-center'>ReVamp</div>
           <div className='flex items-center font-spectral'>Mapping App with login/logout functionality</div>
             <div className='text-4xl font-spectral pl-24 flex flex-row'>
-              <img className='ring-green-200 hover:ring-2 duration-200' style={{maxWidth: "4rem"}} src={mongodb} alt='mongodb'></img>
-              <img className='ring-green-200 hover:ring-2 duration-200' style={{maxWidth: "4rem"}} src={react} alt='react' width={'128rem'}></img>
+              <img className='ring-green-200 hover:ring-2 duration-200' style={{maxWidth: "4rem"}} src={express} alt='express'></img>
+              <img className='ring-green-200 hover:ring-2 duration-200' style={{maxWidth: "4rem"}} src={mysql} alt='mysql' width={'128rem'}></img>
               <img style={{maxWidth: "4rem"}} src={node} alt='node' width={'128rem'}></img>
             </div>
           </div>

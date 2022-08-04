@@ -1,6 +1,10 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 import Logo from '../assets/logo.jpg'
+import image1 from '../assets/1-1.jpg'
+import image2 from '../assets/2-1.jpg'
+import image3 from '../assets/3-1.png'
+import image4 from '../assets/4-1.png'
 
 const Architectural = () => {
   return (
@@ -17,7 +21,7 @@ const Architectural = () => {
                 animate={{x: 0, y: 0, opacity: 1}}
                 transition={{duration: 1}}
                 exit={{x: -50, y: -50, opacity: 0}}
-            ><img src={Logo} alt="Logo"/>
+            ><img src={image1} style={{maxWidth: "15rem"}} alt="image1"/>
             </motion.div>
 
             <motion.div
@@ -25,7 +29,7 @@ const Architectural = () => {
                 animate={{x: 0, y: 0, opacity: 1}}
                 transition={{duration: 1}}
                 exit={{x: 50, y: -50, opacity: 0}}
-            ><img src={Logo} alt="Logo"/>
+            ><img src={image2} style={{maxWidth: "15rem"}} alt="image2"/>
             </motion.div>
 
             <motion.div
@@ -33,7 +37,7 @@ const Architectural = () => {
                 animate={{x: 0, y: 0, opacity: 1}}
                 transition={{duration: 1}}
                 exit={{x: -50, y: 50, opacity: 0}}
-            ><img src={Logo} alt="Logo"/>
+            ><img src={image3} style={{maxWidth: "15rem"}} alt="image3"/>
             </motion.div>
 
             <motion.div
@@ -41,7 +45,7 @@ const Architectural = () => {
                 animate={{x: 0, y: 0, opacity: 1}}
                 transition={{duration: 1}}
                 exit={{x: 50, y: 50, opacity: 0}}
-            ><img src={Logo} alt="Logo"/>
+            ><img src={image4} style={{maxWidth: "15rem"}} alt="image4"/>
             </motion.div>
         </div>
 {/* 
