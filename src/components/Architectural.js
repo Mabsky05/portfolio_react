@@ -1,12 +1,17 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {motion} from 'framer-motion'
 import Logo from '../assets/logo.jpg'
 import image1 from '../assets/1-1.jpg'
 import image2 from '../assets/2-1.jpg'
 import image3 from '../assets/3-1.png'
 import image4 from '../assets/4-1.png'
+import Modal1 from './Modal1'
 
 const Architectural = () => {
+    
+    // Usestate for first image
+    const [isOpen, setIsOpen] = useState(false)
+
   return (
     <motion.div name='work' 
     className='bg-[#0a192f] w-full h-screen text-gray-300 flex justify-center align-center'
@@ -14,15 +19,20 @@ const Architectural = () => {
     // animate={{opacity: 1}}
     // exit={{opacity:0}}
     >
+        
         <div className='grid grid-cols-2 gap-4 place-content-center'>
-            
+        {/* <div>{Logo}</div> */}
             <motion.div
                 initial={{x: -50, y: -50, opacity: 0}}
                 animate={{x: 0, y: 0, opacity: 1}}
                 transition={{duration: 1}}
-                exit={{x: -50, y: -50, opacity: 0}}
-            ><img src={image1} style={{maxWidth: "15rem"}} alt="image1"/>
+                exit={{x: -50, y: -50, opacity: 0}}>
+                <img src={image1} style={{maxWidth: "15rem"}} alt="image1" onClick={() => setIsOpen(true)}/>
+            <Modal1 open={isOpen} onClose={() => setIsOpen(false)}>
+                Fancy Modal
+            </Modal1>
             </motion.div>
+            
 
             <motion.div
                 initial={{x: 50, y: -50, opacity: 0}}
