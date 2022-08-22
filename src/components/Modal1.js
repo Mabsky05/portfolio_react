@@ -27,7 +27,7 @@ const OVERLAY_STYLES = {
 function Modal({ open, children, onClose}) {
     if (!open) return null
     
-    return (
+    return ReactDom.createPortal (
     <>
         <div style={OVERLAY_STYLES}/>
         <div style={MODAL1_STYLES}>
