@@ -6,11 +6,14 @@ import image2 from '../assets/2-1.jpg'
 import image3 from '../assets/3-1.png'
 import image4 from '../assets/4-1.png'
 import Modal1 from './Modal1'
+import Modal2 from './Modal2'
 
 const Architectural = () => {
     
     // Usestate for first image
-    const [isOpen, setIsOpen] = useState(false)
+    const [isOpen1, setIsOpen1] = useState(false)
+
+    const [isOpen2, setIsOpen2] = useState(false)
 
   return (
     <motion.div name='work' 
@@ -26,11 +29,14 @@ const Architectural = () => {
                 initial={{x: -50, y: -50, opacity: 0}}
                 animate={{x: 0, y: 0, opacity: 1}}
                 transition={{duration: 1}}
-                exit={{x: -50, y: -50, opacity: 0}}>
-                <img src={image1} style={{maxWidth: "15rem"}} alt="image1" onClick={() => setIsOpen(true)}/>
-            <Modal1 open={isOpen} onClose={() => setIsOpen(false)}>
-                Fancy Modal
-            </Modal1>
+                exit={{x: -50, y: -50, opacity: 0}}
+            >
+            <img src={image1} style={{maxWidth: "15rem"}} alt="image1" onClick={() => setIsOpen1(true)}/>
+
+                    <Modal1 open={isOpen1} onClose={() => setIsOpen1(false)}>Fancy Modal
+                    <img src={image1} style={{maxWidth: "15rem"}} alt="image1"/>
+                    </Modal1>
+
             </motion.div>
             
 
@@ -39,7 +45,11 @@ const Architectural = () => {
                 animate={{x: 0, y: 0, opacity: 1}}
                 transition={{duration: 1}}
                 exit={{x: 50, y: -50, opacity: 0}}
-            ><img src={image2} style={{maxWidth: "15rem"}} alt="image2"/>
+            >
+            <img src={image2} style={{maxWidth: "15rem"}} alt="image2" onClick={() => setIsOpen2(true)}/>
+            <Modal2 open={isOpen2} onClose={() => setIsOpen2(false)}>
+                
+            </Modal2>
             </motion.div>
 
             <motion.div
