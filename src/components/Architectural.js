@@ -10,10 +10,17 @@ import Modal2 from './Modal2'
 
 const Architectural = () => {
     
-    // Usestate for first image
+    // Usestate for 1st image
     const [isOpen1, setIsOpen1] = useState(false)
 
+    // Usestate for 2nd image
     const [isOpen2, setIsOpen2] = useState(false)
+
+    // Usestate for 3rd image
+    const [isOpen3, setIsOpen3] = useState(false)
+
+    // Usestate for 4th image
+    const [isOpen4, setIsOpen4] = useState(false)
 
   return (
     <motion.div name='work' 
@@ -24,7 +31,8 @@ const Architectural = () => {
     >
         
         <div className='grid grid-cols-2 gap-4 place-content-center'>
-        {/* <div>{Logo}</div> */}
+
+        {/* 1st image */}
             <motion.div
                 initial={{x: -50, y: -50, opacity: 0}}
                 animate={{x: 0, y: 0, opacity: 1}}
@@ -33,13 +41,13 @@ const Architectural = () => {
             >
             <img src={image1} style={{maxWidth: "15rem"}} alt="image1" onClick={() => setIsOpen1(true)}/>
 
-                    <Modal1 open={isOpen1} onClose={() => setIsOpen1(false)}>Fancy Modal
+                    <Modal1 open={isOpen1} onClose={() => setIsOpen1(false)}>
                     <img src={image1} style={{maxWidth: "15rem"}} alt="image1"/>
                     </Modal1>
 
             </motion.div>
             
-
+        {/* 2nd image */}
             <motion.div
                 initial={{x: 50, y: -50, opacity: 0}}
                 animate={{x: 0, y: 0, opacity: 1}}
@@ -52,6 +60,7 @@ const Architectural = () => {
             </Modal2>
             </motion.div>
 
+        {/* 3rd image */}
             <motion.div
                 initial={{x: -50, y: 50, opacity: 0}}
                 animate={{x: 0, y: 0, opacity: 1}}
@@ -60,6 +69,7 @@ const Architectural = () => {
             ><img src={image3} style={{maxWidth: "15rem"}} alt="image3"/>
             </motion.div>
 
+        {/* 4th image */}
             <motion.div
                 initial={{x: 50, y: 50, opacity: 0}}
                 animate={{x: 0, y: 0, opacity: 1}}
