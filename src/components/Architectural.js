@@ -1,10 +1,16 @@
 import React, {useState} from 'react'
 import {motion} from 'framer-motion'
 import Logo from '../assets/logo.jpg'
-import image1 from '../assets/1-1.jpg'
-import image2 from '../assets/2-1.jpg'
+import image1_1 from '../assets/1-1.jpg'
+import image1_2 from '../assets/1-2.jpg'
+import image1_3 from '../assets/1-3.jpg'
+import image1_4 from '../assets/1-4.jpg'
+
+
+import image2 from '../assets/2-1.png'
 import image3 from '../assets/3-1.png'
-import image4 from '../assets/4-1.png'
+import image4 from '../assets/4-1.jpg'
+
 import Modal1 from './Modal1'
 import Modal2 from './Modal2'
 
@@ -30,52 +36,70 @@ const Architectural = () => {
     // exit={{opacity:0}}
     >
         
-        <div className='grid grid-cols-2 gap-4 place-content-center'>
+        <div className='grid grid-cols-2 gap-20 place-content-center'>
 
         {/* 1st image */}
-            <motion.div
+            <motion.div className='flex items-center justify-center' 
                 initial={{x: -50, y: -50, opacity: 0}}
                 animate={{x: 0, y: 0, opacity: 1}}
                 transition={{duration: 1}}
                 exit={{x: -50, y: -50, opacity: 0}}
-            >
-            <img src={image1} style={{maxWidth: "15rem"}} alt="image1" onClick={() => setIsOpen1(true)}/>
+                >
 
-                    <Modal1 open={isOpen1} onClose={() => setIsOpen1(false)}>
-                    <img src={image1} style={{maxWidth: "15rem"}} alt="image1"/>
-                    </Modal1>
+                <button className='font-spectral text-4xl hover:text-grey-600 hover:opacity-50' 
+                onClick={() => setIsOpen1(true)}>Thesis
+                </button>
+
+                <Modal1 className='' open={isOpen1} onClose={() => setIsOpen1(false)}>
+                <div className='grid grid-cols-2 gap-5 place-content-center'>
+                    <img className='transition duration-700 hover:scale-[2.5] hover:translate-y-1/2' 
+                    src={image1_1} style={{maxWidth: "15rem"}} alt="image1-1"/>
+                    <img className='transition duration-700 hover:scale-[2] hover:translate-y-1/3' 
+                    src={image1_2} style={{maxWidth: "15rem"}} alt="image1-2"/>
+                    <img className='transition duration-700 hover:scale-[3]' 
+                    src={image1_3} style={{maxWidth: "15rem"}} alt="image1-1"/>
+                    <img className='transition duration-700 hover:scale-[2.5] hover:-translate-y-1/3' 
+                    src={image1_4} style={{maxWidth: "15rem"}} alt="image1-1"/>
+                </div>
+                </Modal1>
 
             </motion.div>
             
         {/* 2nd image */}
-            <motion.div
+            <motion.div className='flex items-center justify-center'
                 initial={{x: 50, y: -50, opacity: 0}}
                 animate={{x: 0, y: 0, opacity: 1}}
                 transition={{duration: 1}}
-                exit={{x: 50, y: -50, opacity: 0}}
-            >
-            <img src={image2} style={{maxWidth: "15rem"}} alt="image2" onClick={() => setIsOpen2(true)}/>
+                exit={{x: 50, y: -50, opacity: 0}}>
+
+            <button className='font-spectral text-4xl hover:text-grey-600 hover:opacity-50' onClick={() => setIsOpen2(true)}>Commercial</button>
+
             <Modal2 open={isOpen2} onClose={() => setIsOpen2(false)}>
                 
             </Modal2>
             </motion.div>
 
         {/* 3rd image */}
-            <motion.div
+            <motion.div className='flex items-center justify-center'
                 initial={{x: -50, y: 50, opacity: 0}}
                 animate={{x: 0, y: 0, opacity: 1}}
                 transition={{duration: 1}}
                 exit={{x: -50, y: 50, opacity: 0}}
-            ><img src={image3} style={{maxWidth: "15rem"}} alt="image3"/>
+            >
+                <button className='font-spectral text-4xl hover:text-grey-600 hover:opacity-50' onClick={() => setIsOpen3(true)}>Retail</button>
+                {/* <img src={image3} style={{maxWidth: "15rem"}} alt="image3"/> */}
             </motion.div>
 
         {/* 4th image */}
-            <motion.div
+            <motion.div className='flex items-center justify-center'
                 initial={{x: 50, y: 50, opacity: 0}}
                 animate={{x: 0, y: 0, opacity: 1}}
                 transition={{duration: 1}}
                 exit={{x: 50, y: 50, opacity: 0}}
-            ><img src={image4} style={{maxWidth: "15rem"}} alt="image4"/>
+            >
+
+<button className='font-spectral text-4xl hover:text-grey-600 hover:opacity-50' onClick={() => setIsOpen3(true)}>Misc</button>
+
             </motion.div>
         </div>
 {/* 

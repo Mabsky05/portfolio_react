@@ -27,11 +27,11 @@ function Modal1({ open, children, onClose}) {
     
     return ReactDom.createPortal (
     <>
-        <motion.div
+        <motion.div className='hidden md:flex font-expletus text-3xl text-gray-300'
                         initial={{x: 0, y: 0, opacity: .5}}
                         animate={{x: 0, y: 0, opacity: 1}}
                         transition={{duration: 1}}
-                        exit={{x: 50, y: -50, opacity: 0}}
+                        exit={{x:0, y:0, opacity: 0}}
         
         >
             <div style={OVERLAY_STYLES}/>
