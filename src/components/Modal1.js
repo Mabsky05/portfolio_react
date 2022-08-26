@@ -27,10 +27,10 @@ function Modal1({ open, children, onClose}) {
     
     return ReactDom.createPortal (
     <>
-        <motion.div className='hidden md:flex font-expletus text-3xl text-gray-300'
+        <motion.div className='flex font-expletus text-3xl text-gray-300'
                         initial={{x: 0, y: 0, opacity: .5}}
                         animate={{x: 0, y: 0, opacity: 1}}
-                        transition={{duration: 1}}
+                        transition={{duration: 2}}
                         exit={{x:0, y:0, opacity: 0}}
         
         >

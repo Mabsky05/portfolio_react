@@ -6,6 +6,11 @@ import image1_2 from '../assets/1-2.jpg'
 import image1_3 from '../assets/1-3.jpg'
 import image1_4 from '../assets/1-4.jpg'
 
+import image2_1 from '../assets/2-1.png'
+import image2_2 from '../assets/2-2.png'
+import image2_3 from '../assets/2-3.png'
+import image2_4 from '../assets/2-4.png'
+
 
 import image2 from '../assets/2-1.png'
 import image3 from '../assets/3-1.png'
@@ -72,9 +77,21 @@ const Architectural = () => {
                 transition={{duration: 1}}
                 exit={{x: 50, y: -50, opacity: 0}}>
 
-            <button className='font-spectral text-4xl hover:text-grey-600 hover:opacity-50' onClick={() => setIsOpen2(true)}>Commercial</button>
+            <button className='font-spectral text-4xl hover:text-grey-600 hover:opacity-50' 
+            onClick={() => setIsOpen2(true)}>Commercial
+            </button>
 
-            <Modal2 open={isOpen2} onClose={() => setIsOpen2(false)}>
+            <Modal2  className='' open={isOpen2} onClose={() => setIsOpen2(false)}>
+            <div className='grid grid-cols-2 gap-5 place-content-center'>
+                    <img className='transition duration-700 hover:scale-[2.5] hover:translate-x-1/3 hover:translate-y-2/3' 
+                    src={image2_1} style={{maxWidth: "15rem"}} alt="image2-1"/>
+                    <img className='transition duration-700 hover:scale-[3] hover:-translate-x-1/3 hover:translate-y-1/3' 
+                    src={image2_2} style={{maxWidth: "15rem"}} alt="image2-2"/>
+                    <img className='transition duration-700 hover:scale-[2]' 
+                    src={image2_3} style={{maxWidth: "15rem"}} alt="image2-3 hover:-translate-y-3/4"/>
+                    <img className='transition duration-700 hover:scale-[3] hover:translate-y-1/3' 
+                    src={image2_4} style={{maxWidth: "15rem"}} alt="image2-4"/>
+                </div>
                 
             </Modal2>
             </motion.div>
