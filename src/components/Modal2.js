@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDom from 'react-dom'
+import {motion} from 'framer-motion'
 
 const MODAL2_STYLES = {
     position: 'fixed',
@@ -16,21 +17,27 @@ const OVERLAY_STYLES = {
     left: 0,
     right: 0,
     bottom: 0,
-    backgroundColor: 'rgba(0, 0, 0, .7)',
+    backgroundColor: 'rgba(0, 0, 0, 1)',
     zIndex: 5
 } 
-
 
 function Modal2({ open, children, onClose}) {
     if (!open) return null
     
     return ReactDom.createPortal (
     <>
+            <motion.div className='flex font-expletus text-3xl text-gray-300'
+            initial={{x: 0, y: 0, opacity: 0}}
+            animate={{x: 0, y: 0, opacity: 1}}
+            transition={{duration: 1.5}}
+            exit={{x:0, y:0, opacity: 0}}>
         <div style={OVERLAY_STYLES}/>
         <div style={MODAL2_STYLES}>
             <button onClick={onClose}>x</button> 
         {children}
         </div>
+        </motion.div>
+
     </>,
     document.getElementById('portal2')
     )

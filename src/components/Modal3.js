@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDom from 'react-dom'
 import {motion} from 'framer-motion'
 
-const MODAL1_STYLES = {
+const MODAL3_STYLES = {
     position: 'fixed',
     top: '50%',
     left: '50%',
@@ -21,27 +21,26 @@ const OVERLAY_STYLES = {
     zIndex: 5
 } 
 
-
-function Modal1({ open, children, onClose}) {
+function Modal3({ open, children, onClose}) {
     if (!open) return null
     
     return ReactDom.createPortal (
     <>
-        <motion.div className='flex font-expletus text-3xl text-gray-300'
+            <motion.div className='flex font-expletus text-3xl text-gray-300'
             initial={{x: 0, y: 0, opacity: 0}}
             animate={{x: 0, y: 0, opacity: 1}}
             transition={{duration: 1.5}}
             exit={{x:0, y:0, opacity: 0}}>
-
-            <div style={OVERLAY_STYLES}/>
-            <div style={MODAL1_STYLES}>
+        <div style={OVERLAY_STYLES}/>
+        <div style={MODAL3_STYLES}>
             <button onClick={onClose}>x</button> 
-            {children}
-            </div>
+        {children}
+        </div>
         </motion.div>
+
     </>,
-    document.getElementById('portal')
+    document.getElementById('portal2')
     )
 }
 
-export default Modal1
+export default Modal3
