@@ -1,6 +1,10 @@
 import React, {useState} from 'react'
 import {motion} from 'framer-motion'
 
+import Modal1 from './Modal1'
+import Modal2 from './Modal2'
+import Modal3 from './Modal3'
+import Modal4 from './Modal4'
 
 import image1_1 from '../assets/1-1.jpg'
 import image1_2 from '../assets/1-2.jpg'
@@ -12,10 +16,10 @@ import image2_2 from '../assets/2-2.png'
 import image2_3 from '../assets/2-3.png'
 import image2_4 from '../assets/2-4.png'
 
-import image3_1 from '../assets/3-1.png'
+import image3_1 from '../assets/3-1.jpg'
 import image3_2 from '../assets/3-2.jpg'
 import image3_3 from '../assets/3-3.jpg'
-import image3_4 from '../assets/3-4.jpg'
+import image3_4 from '../assets/3-4.png'
 
 import image4_1 from '../assets/4-1.jpg'
 import image4_2 from '../assets/4-2.png'
@@ -23,10 +27,6 @@ import image4_3 from '../assets/4-3.jpg'
 import image4_4 from '../assets/4-4.jpg'
 
 
-import Modal1 from './Modal1'
-import Modal2 from './Modal2'
-import Modal3 from './Modal3'
-import Modal4 from './Modal4'
 
 const Architectural = () => {
     
@@ -90,14 +90,14 @@ const Architectural = () => {
 
             <Modal2  className='' open={isOpen2} onClose={() => setIsOpen2(false)}>
             <div className='grid grid-cols-2 gap-5 place-content-center'>
-                    <img className='transition duration-700 hover:scale-[2.5] hover:translate-x-1/3 hover:translate-y-2/3' 
-                    src={image2_1} style={{maxWidth: "15rem"}} alt="image2-1"/>
-                    <img className='transition duration-700 hover:scale-[3] hover:-translate-x-1/3 hover:translate-y-1/3' 
-                    src={image2_2} style={{maxWidth: "15rem"}} alt="image2-2"/>
-                    <img className='transition duration-700 hover:scale-[2]' 
-                    src={image2_3} style={{maxWidth: "15rem"}} alt="image2-3 hover:-translate-y-3/4"/>
-                    <img className='transition duration-700 hover:scale-[3] hover:translate-y-1/3' 
-                    src={image2_4} style={{maxWidth: "15rem"}} alt="image2-4"/>
+                <img className='transition duration-700 hover:scale-[2.5] hover:translate-x-1/3 hover:translate-y-2/3' 
+                src={image2_1} style={{maxWidth: "15rem"}} alt="image2-1"/>
+                <img className='transition duration-700 hover:scale-[3] hover:-translate-x-1/3 hover:translate-y-1/3' 
+                src={image2_2} style={{maxWidth: "15rem"}} alt="image2-2"/>
+                <img className='transition duration-700 hover:scale-[2]' 
+                src={image2_3} style={{maxWidth: "15rem"}} alt="image2-3 hover:-translate-y-3/4"/>
+                <img className='transition duration-700 hover:scale-[3] hover:translate-y-1/3' 
+                src={image2_4} style={{maxWidth: "15rem"}} alt="image2-4"/>
                 </div>  
             </Modal2>
             </motion.div>
@@ -114,15 +114,15 @@ const Architectural = () => {
                 </button>
 
                 <Modal3  className='' open={isOpen3} onClose={() => setIsOpen3(false)}>
-                <div className='grid grid-cols-2 gap-5 place-content-center'>
+                <div className='grid grid-cols-2 gap-5 place-content-around'>
                     <img className='transition duration-700 hover:scale-[2.5] hover:translate-x-1/3 hover:translate-y-2/3' 
-                    src={image3_1} style={{maxWidth: "15rem"}} alt="image2-1"/>
+                    src={image3_1} style={{maxWidth: "20rem"}} alt="image2-1"/>
                     <img className='transition duration-700 hover:scale-[3] hover:-translate-x-1/3 hover:translate-y-1/3' 
                     src={image3_2} style={{maxWidth: "15rem"}} alt="image2-2"/>
                     <img className='transition duration-700 hover:scale-[2]' 
                     src={image3_3} style={{maxWidth: "15rem"}} alt="image2-3 hover:-translate-y-3/4"/>
                     <img className='transition duration-700 hover:scale-[3] hover:translate-y-1/3' 
-                    src={image3_4} style={{maxWidth: "15rem"}} alt="image2-4"/>
+                    src={image3_4} style={{maxWidth: "10rem"}} alt="image2-4"/>
                 </div>
                 </Modal3>
             </motion.div>
