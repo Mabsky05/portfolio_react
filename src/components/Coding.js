@@ -27,7 +27,11 @@ const Coding = () => {
       
       className='max-w-[1150px] mx-auto my-auto pt-20 grid grid-cols-1 gap-6 justify-center'>
         <div className='pl-12 flex flex-row'>
-          <div className='text-4xl font-spectral pr-24 flex items-center'>MARP</div>
+          <div className='text-4xl font-spectral pr-24 flex items-center'>
+            <a href="http://mabsky05project3.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+              MARP
+            </a>
+          </div>
           <div className='flex items-center font-spectral'>Mapping App with login/logout functionality</div>
             <div className='text-4xl font-spectral pl-24 flex flex-row'>
               
@@ -40,7 +44,7 @@ const Coding = () => {
 
           <div className='pl-24 flex flex-row'>
           <div className='text-4xl font-spectral pr-24 flex items-center'>WeatherDash</div>
-          <div className='flex items-center font-spectral'>Mapping App with login/logout functionality</div>
+          <div className='flex items-center font-spectral'>Track weather data by city input</div>
             <div className='text-4xl font-spectral pl-24 flex flex-row'>
               <img className=' bg-cover bg-center z-0 ring-green-200 hover:ring-2 duration-200' style={{maxWidth: "4rem"}} src={bootstrap} alt='bootstrap'></img>
               <img className='ring-green-200 hover:ring-2 duration-200' style={{maxWidth: "4rem"}} src={css} alt='css'></img>
@@ -52,7 +56,7 @@ const Coding = () => {
 
           <div className='pl-48 flex flex-row'>
           <div className='text-4xl font-spectral pr-24 flex items-center'>Team Gen</div>
-          <div className='flex items-center font-spectral'>Mapping App with login/logout functionality</div>
+          <div className='flex items-center font-spectral'>HTML team generator</div>
             <div className='text-4xl font-spectral pl-24 flex flex-row'>
               <img className='ring-green-200 hover:ring-2 duration-200' style={{maxWidth: "4rem"}} src={node} alt='node'></img>
               <img className='ring-green-200 hover:ring-2 duration-200' style={{maxWidth: "4rem"}} src={html5} alt='html5' width={'128rem'}></img>
@@ -61,7 +65,7 @@ const Coding = () => {
           
           <div className='pl-72 flex flex-row'>
           <div className='text-4xl font-spectral pr-24 flex items-center'>ReVamp</div>
-          <div className='flex items-center font-spectral'>Mapping App with login/logout functionality</div>
+          <div className='flex items-center font-spectral'>Home DIY repository</div>
             <div className='text-4xl font-spectral pl-24 flex flex-row'>
               <img className='ring-green-200 hover:ring-2 duration-200' style={{maxWidth: "4rem"}} src={express} alt='express'></img>
               <img className='ring-green-200 hover:ring-2 duration-200' style={{maxWidth: "4rem"}} src={mysql} alt='mysql' width={'128rem'}></img>

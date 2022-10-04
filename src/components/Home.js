@@ -25,14 +25,14 @@ function Home() {
 
                 </p>
               </p>
-              <p className='Right column'>
+              {/* <p className='Right column'>
                 <button className='text-white group border-2 px-6 py-3 my-2 flex 
                 items-center hover:bg-pink-600 hover:border-pink-600'>About
                 <span className='group-hover:rotate-90 duration-300'>
                 <HiArrowNarrowRight />
                 </span>
                 </button> 
-              </p>
+              </p> */}
           </p>
         </motion.div>
     </motion.div>
