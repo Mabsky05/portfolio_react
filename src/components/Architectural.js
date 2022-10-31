@@ -59,7 +59,7 @@ const Architectural = () => {
                 transition={{duration: 1}}
                 exit={{x: -50, y: -50, opacity: 0}}>
 
-                <button className='font-spectral text-4xl hover:text-grey-600 hover:opacity-50' 
+                <button className='font-spectral text-4xl text-gray-400 hover:text-gray-300' 
                 onClick={() => setIsOpen1(true)}>Thesis
                 </button>
 
@@ -84,7 +84,7 @@ const Architectural = () => {
                 transition={{duration: 1}}
                 exit={{x: 50, y: -50, opacity: 0}}>
 
-            <button className='font-spectral text-4xl hover:text-grey-600 hover:opacity-50' 
+            <button className='font-spectral text-4xl text-gray-400 hover:text-gray-300' 
             onClick={() => setIsOpen2(true)}>Commercial
             </button>
 
@@ -109,7 +109,7 @@ const Architectural = () => {
                 transition={{duration: 1}}
                 exit={{x: -50, y: 50, opacity: 0}}>
 
-                <button className='font-spectral text-4xl hover:text-grey-600 hover:opacity-50' 
+                <button className='font-spectral text-4xl text-gray-400 hover:text-gray-300' 
                 onClick={() => setIsOpen3(true)}>Residential
                 </button>
 
@@ -134,7 +134,7 @@ const Architectural = () => {
                 transition={{duration: 1}}
                 exit={{x: 50, y: 50, opacity: 0}}>
 
-        <button className='font-spectral text-4xl hover:text-grey-600 hover:opacity-50' 
+        <button className='font-spectral text-4xl text-gray-400 hover:text-gray-300' 
         onClick={() => setIsOpen4(true)}>Misc
         </button>
 
