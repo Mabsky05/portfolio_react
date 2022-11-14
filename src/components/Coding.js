@@ -3,7 +3,6 @@ import {motion} from 'framer-motion'
 import bootstrap from '../assets/bootstrap.png'
 import css from '../assets/css.png'
 import express from '../assets/express.png'
-import graphql from '../assets/graphql.png'
 import html5 from '../assets/html5.png'
 import jquery from '../assets/jquery.png'
 import js from '../assets/js.png'
@@ -14,9 +13,8 @@ import react from '../assets/react.png'
 
 
 const Coding = () => {
-  const devIconStyle = {
-    width: "5rem"
-  };
+
+  // Project Sections
 
   return (
     <div name='skills' className='w-full my-auto h-screen bg-[#0a192f] text-gray-300'>
@@ -26,6 +24,7 @@ const Coding = () => {
         transition={{duration:2}}
         className='max-w-[1150px] mx-auto my-auto pt-20 grid grid-cols-1 gap-6'>
 
+      {/* Mapping App */}
       <a href="http://mabsky05project3.herokuapp.com/" target="_blank" rel="noopener noreferrer">
         <div className='flex flex-row justify-center text-gray-400 ring-gray-300 hover:ring-2 duration-200'>
           <div className='text-4xl font-spectral pr-24 flex items-center'>MARP</div>
@@ -39,6 +38,7 @@ const Coding = () => {
         </div>
       </a>
 
+      {/* Weather Dashboard */}
       <a href="https://mabsky05.github.io/weather_dashboard" target="_blank" rel="noopener noreferrer">
         <div className='flex flex-row justify-center text-gray-400  ring-gray-300 hover:ring-2 duration-200'>
           <div className='text-4xl font-spectral pr-24 flex items-center'>WeatherDash</div>
@@ -53,6 +53,7 @@ const Coding = () => {
         </div>
         </a>
 
+        {/* Team Generator */}
         <a href="https://github.com/Mabsky05/team_gen" target="_blank" rel="noopener noreferrer">
           <div className='flex flex-row justify-center text-gray-400  ring-gray-300 hover:ring-2 duration-200'>
             <div className='text-4xl font-spectral pr-24 flex items-center'>Team Generator</div>
@@ -64,7 +65,8 @@ const Coding = () => {
             </div>
           </a>
 
-          <a href="https://github.com/Mabsky05/revamp" target="blank" rel="noopener noreferrer">
+        {/* ReVamp */}
+        <a href="https://github.com/Mabsky05/revamp" target="blank" rel="noopener noreferrer">
           <div className='flex flex-row justify-center text-gray-400  ring-gray-300 hover:ring-2 duration-200'>
           <div className='text-4xl font-spectral pr-24 flex items-center'>
           ReVamp
@@ -77,16 +79,6 @@ const Coding = () => {
             </div>
           </div>
           </a>
-          
-          
-       
-
-        {/* <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py8'>
-          <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-            <img className='w-20 mx-auto' src='' alt='skill_icon'/>
-            <p className='my-4'>skill name</p>
-          </div> 
-        </div> */}
       </motion.div>
     </div>
   )

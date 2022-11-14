@@ -21,7 +21,6 @@ const OVERLAY_STYLES = {
     zIndex: 5
 } 
 
-
 function Modal1({ open, children, onClose}) {
     if (!open) return null
     
