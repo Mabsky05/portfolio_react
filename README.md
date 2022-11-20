@@ -1,5 +1,5 @@
 # React Portfolio
-![alt text](Assets/sample.jpg)
+![alt text](Assets/folio_screenshot.png)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
